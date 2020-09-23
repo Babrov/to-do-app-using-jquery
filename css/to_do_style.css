@@ -1,0 +1,124 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  height: 89vh;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/0/00/Chitkan-mountain-view.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  height: 100%;
+  margin-top: 100px;
+}
+
+.add {
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 4px 3px 14px 5px #000000;
+}
+.add #add__task {
+  height: 30px;
+}
+.add #add__button {
+  margin-left: 0;
+  height: 25px;
+  width: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.add #add__button:active {
+  background-color: lightgreen;
+}
+
+.to_do {
+  margin-top: 20px;
+  float: left;
+  margin-left: 50px;
+  border-radius: 10px;
+  background-color: rgba(247, 255, 222, 0.8);
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 4px 3px 14px 5px #000000;
+}
+.to_do__header {
+  border-bottom: 1px dashed black;
+}
+.to_do #tasks {
+  margin-top: 15px;
+  list-style-type: none;
+}
+
+#done {
+  margin-top: 20px;
+  float: right;
+  margin-right: 50px;
+  background-color: #c7ff96;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 4px 3px 14px 5px #000000;
+}
+#done .header {
+  border-bottom: 1px solid black;
+}
+#done #done_holder {
+  list-style-type: none;
+  width: 100%;
+  min-height: 30px;
+  height: 100%;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.8);
+  align-items: center;
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+}
+li .task_delete {
+  margin-right: 0;
+  padding: 2px;
+  float: right;
+  width: 25px;
+  height: 100%;
+  background-color: #f8a408;
+  border-radius: 5px;
+}
+li .task_delete:active {
+  background-color: red;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
